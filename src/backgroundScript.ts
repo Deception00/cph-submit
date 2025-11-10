@@ -45,3 +45,5 @@ const mainLoop = async () => {
 };
 
 setInterval(mainLoop, config.loopTimeOut);
+
+setInterval(() => console.debug("keepalive ping"), 20000);
